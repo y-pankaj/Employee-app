@@ -1,0 +1,15 @@
+<div class="form-container">
+  <form [formGroup] = "registrationForm" (ngSubmit) = "onSubmit()" class="registration-form">
+    <div class="form-group input-container">
+      <label>Username</label>
+      <input formControlName = "userName" type="text" class="form-control">
+      <label>Position</label>
+      <input formControlName = "position"type="text" class="form-control">
+      <label>About</label>
+      <input formControlName = "about" type="text" class="form-control">
+      <label>Date of joining</label>
+      <input formControlName = "joiningDate" type="date" class="form-control">
+      <button type="submit">Register</button>
+    </div>
+  </form>
+</div>

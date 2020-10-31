@@ -1,0 +1,61 @@
+.mat-card-container {
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-around;
+  flex-wrap:wrap;
+}
+
+.employee-card {
+  width:33%; 
+  height: 150px;
+  margin:20px;
+  min-width: 280px;
+}
+
+.avatar-header-image {
+  background-image: url('https://image.shutterstock.com/image-vector/default-avatar-photo-placeholder-profile-260nw-772402006.jpg');
+  background-size: cover;
+}
+
+/* .top-corner {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  border-radius: 50%;
+  border: none;
+  padding: 1em;
+} */
+
+.close-card {
+  background-color: DCDCDC;
+  color: black;
+  border: 2px solid #e7e7e7;
+  position: absolute;
+  right: .5em;
+  top: .5em;
+  border-radius: 50%;
+  border: none;
+  padding: .5em;
+  font-size: large;
+}
+
+.close-card:hover {
+  background-color: #e7e7e7;
+  cursor: pointer;
+}
+
+.pink-color {
+  color: #e75480;
+}
+
+.footer-padding {
+  position: absolute;
+  bottom: .5em;
+  padding: 1em;
+  font-weight: 500;
+}
+
+.container{
+
+}
+

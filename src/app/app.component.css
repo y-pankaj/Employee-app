@@ -1,0 +1,13 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button.active{
+  background-color: #e75480;
+}
+
+.toggle-button {
+  margin: 0em 0.5em 0em 0.5em;
+}
+

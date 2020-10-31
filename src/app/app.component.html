@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee App</title>
+  <base href="/">
+</head>
+<body>
+  <div style="text-align: center;">
+    <h1>Employees App</h1>
+  </div>
+  <div class="button-container">
+    <button mat-raised-button routerLinkActive="active" routerLink="register" class="toggle-button">Register</button>
+    <button mat-raised-button routerLinkActive="active" routerLink="details" class="toggle-button">Employee Details</button>
+  </div>
+  <router-outlet></router-outlet>
+</body>
+</html>
+
