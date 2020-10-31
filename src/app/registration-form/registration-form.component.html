@@ -1,15 +1,28 @@
 <div class="form-container">
-  <form [formGroup] = "registrationForm" (ngSubmit) = "onSubmit()" class="registration-form">
+  <form [formGroup] = "registrationForm"  class="registration-form" (ngSubmit)="onSubmit()">
     <div class="form-group input-container">
-      <label>Username</label>
-      <input formControlName = "userName" type="text" class="form-control">
-      <label>Position</label>
-      <input formControlName = "position"type="text" class="form-control">
-      <label>About</label>
-      <input formControlName = "about" type="text" class="form-control">
-      <label>Date of joining</label>
-      <input formControlName = "joiningDate" type="date" class="form-control">
-      <button type="submit">Register</button>
+      <mat-form-field style="width:80% !important; max-width: 400px !important;" appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput required formControlName = "name" class="form-control" />
+      </mat-form-field>
+      <br>
+      <mat-form-field style="width:80% !important; max-width: 400px !important;" appearance="fill">
+        <mat-label>Position</mat-label>
+        <input matInput required formControlName = "position" class="form-control" />
+      </mat-form-field>
+      <br>
+      <mat-form-field style="width:80% !important; max-width: 400px !important;" appearance="fill">
+        <mat-label>About</mat-label>
+        <textarea matInput required formControlName = "about" class="form-control"></textarea>
+      </mat-form-field>
+      <br>
+      <mat-form-field style="width:80% !important; max-width: 400px !important;" appearance="fill">
+        <mat-label>Choose a date</mat-label>
+        <input matInput required [matDatepicker]="picker" formControlName = "joiningDate"  class="form-control" />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
     </div>
+    <button mat-raised-button style="width:80% !important; max-width: 400px !important;" type="submit" class="pink-color">Register</button>
   </form>
 </div>

@@ -3,7 +3,7 @@
     <mat-card-header>
       <img mat-card-avatar class="avatar-header-image">
       <mat-card-title-group>
-        <mat-card-title>{{ employee.userName }}</mat-card-title>
+        <mat-card-title>{{ employee.name }}</mat-card-title>
         <mat-card-subtitle>{{ employee.position }}</mat-card-subtitle>
       </mat-card-title-group>
       <button class="top-corner close-card" (click)="deleteEmployee(employee)">&#x2715;</button>
@@ -13,6 +13,6 @@
         {{ employee.about }}
       </p>
     </mat-card-content>
-    <mat-card-footer class="footer-padding"><span class="pink-color">JOINING DATE:</span> {{ employee.joiningDate | date: "dd/MM/yy" }}</mat-card-footer>
+    <mat-card-footer class="footer-padding"><span class="pink-color">JOINING DATE:</span> {{ employee.joiningDate | date: "dd/MM/yyyy" }}</mat-card-footer>
   </mat-card>
 </div>
