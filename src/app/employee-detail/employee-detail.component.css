@@ -13,7 +13,7 @@
 }
 
 .avatar-header-image {
-  background-image: url('https://image.shutterstock.com/image-vector/default-avatar-photo-placeholder-profile-260nw-772402006.jpg');
+  background: lightgray;
   background-size: cover;
 }
 
