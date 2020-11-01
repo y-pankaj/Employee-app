@@ -17,15 +17,6 @@
   background-size: cover;
 }
 
-/* .top-corner {
-  position: absolute;
-  right: 1em;
-  top: 1em;
-  border-radius: 50%;
-  border: none;
-  padding: 1em;
-} */
-
 .close-card {
   background-color: DCDCDC;
   color: black;
@@ -54,8 +45,3 @@
   padding: 1em;
   font-weight: 500;
 }
-
-.container{
-
-}
-

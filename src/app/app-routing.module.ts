@@ -4,10 +4,9 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 
 const routes: Routes = [
-//   { path: '', redirectTo: '/register' },
   { path: 'register', component: RegistrationFormComponent },
   { path: 'details', component: EmployeeDetailComponent },
-  { path: '**', redirectTo: '/register'}
+  { path: '**', redirectTo: '/register'} // redirect all other paths to registration view
 ];
 
 @NgModule({
